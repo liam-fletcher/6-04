@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <body>
+
+<h2>Age and the day of the week for student pricing</h2>
+
+<p>Step 1: Please input your age</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+ var x, text;
+
+ // Get the value of the input field with id="numb"
+ x = document.getElementById("numb").value;
+
+ // If x is Not a Number or less than one or greater than 99
+ if (isNaN(x) || x < 12 || x > 21 ) {
+   text = "You're not eligible for student pricing, you must pay regular price";
+ } else {
+   text = "You're eligible for student pricing, please continue to the next step";
+ }
+ document.getElementById("demo").innerHTML = text;
+}
+</script>
+<br>
+<br>
+<p>Step 2: Please input the day of the week as a number</p>
+
+<p> weekday[7]="Monday"
+  <br>
+weekday[1]="Tuesday"
+<br>
+weekday[3]="Wednesday"
+<br>
+weekday[2]="Thursday"
+<br>
+weekday[4]="Friday"
+<br>
+weekday[5]="Saturday"
+<br>
+weekday[6]="Sunday"
+<p>
+
+<input id="day">
+
+<button type="buttonn" onclick="myyFunction()">Submit</button>
+
+<p id="demoo"></p>
+
+<script>
+function myyFunction() {
+ var x, text;
+
+ // Get the value of the input field with id="day"
+ x = document.getElementById("day").value;
+
+ // If day is the same day as the student pricing
+ if (isNaN(x) || x > 2 || x < 1) {
+   text = "You're not eligible for student pricing on this day";
+ } else {
+   text = "You're eligible for student pricing on this day";
+ }
+ document.getElementById("demoo").innerHTML = text;
+}
+</script>
+</body>
+</html>
+
+
+
